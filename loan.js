@@ -21,22 +21,12 @@ function calculate(){
         monthlypayment.value = monthly.toFixed(2);
         totalamount.value = (monthly*calculatedpayment).toFixed(2);
         totalintrest.value = (monthly * calculatedpayment - principal).toFixed(2);
-        
-    // const y = document.getElementById("result")
-    // const c = document.querySelector(".card")
     const l = document.getElementById("loading")
     l.style.display="none"
-    // c.insertAdjacentElement(l,y)
-    // setTimeout(function(){
-    //     document.getElementById("loading").remove();
-    // },2000)
-
-        document.getElementById("result").style.display="block";
-        // console.log(monthlypayment)
+     document.getElementById("result").style.display="block";
     }else{
         showAlert('plese enter the amount');
     }
-    // e.preventDefault();
 }
 
 function showAlert(error){
